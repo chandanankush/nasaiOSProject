@@ -8,8 +8,8 @@
 import Foundation
 
 struct NASADataModel: Codable {
-    let title: String
-    let explanation: String
+    let title: String?
+    let explanation: String?
     let copyright: String?
     let date: String
     let url: String

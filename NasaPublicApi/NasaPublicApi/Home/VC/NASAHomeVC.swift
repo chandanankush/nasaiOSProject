@@ -75,6 +75,7 @@ final class NASAHomeVC: UIViewController {
 private extension NASAHomeVC {
     func configureUI() {
         if barButtonNeeded {
+            self.title = Date().stringDate()
             favouriteButton = UIButton(type: .system)
             favouriteButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
             favouriteButton.addTarget(self, action: #selector(addToFavouriteClicked), for: .touchUpInside)
